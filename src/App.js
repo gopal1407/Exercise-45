@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import CharacterList from './components/characterlist';
-import CharacterDetail from './components/detail';
-
+import CharacterList from './components/characterList';
+import CharacterDetail from './components/CharacterDetail';
 const App = () => {
   const [selectedCharacterId, setSelectedCharacterId] = useState(null);
 

@@ -13,6 +13,7 @@ const CharacterList = ({ onCharacterSelect }) => {
     axios
       .get(`${BASE_URL}&apikey=${PUBLIC_KEY}&hash=${HASH}`)
       .then((response) => {
+        console.log('✅ Marvel API response:', response.data);
         setCharacters(response.data.data.results);
       })
       .catch((error) => {
